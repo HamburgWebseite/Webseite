@@ -422,4 +422,46 @@ h3{
   .metrics{grid-template-columns:1fr; gap:14px}
   .row2{grid-template-columns:1fr}
 }
+/* ===== ABOUT SECTION (Apple-clean) ===== */
+.about{
+  display:grid;
+  gap:22px;
+}
+
+.about__block{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius: var(--radius);
+  padding:22px;
+}
+
+.about__block h3{
+  margin:0 0 10px;
+  font-size:18px;
+  letter-spacing:-0.01em;
+}
+
+.about__text p{
+  margin:0 0 12px;
+  color:var(--muted);
+  line-height:1.85;
+  font-size:16px;
+}
+.about__text p:last-child{margin-bottom:0}
+
+.about__note{
+  border-top:1px solid rgba(0,0,0,.12);
+  padding-top:16px;
+}
+.about__note p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.85;
+}
+
+/* Subtile “Apple”-Animation: etwas langsamer + weicher */
+.reveal{
+  transform: translateY(10px);
+  transition: opacity .7s ease, transform .7s ease;
+}
 
