@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Über mich – Annette Hamburg</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <div class="overlay" data-close></div>
+  <aside class="drawer" aria-label="Menü" aria-hidden="true">
+    <div class="drawer__header">
+      <div class="drawer__brand">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </div>
+      <button class="iconbtn" data-close aria-label="Menü schließen">✕</button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="./index.html" data-close>Start</a>
+      <a href="./ueber-mich.html" data-close aria-current="page">Über mich</a>
+      <a href="./seminar.html" data-close>Seminar</a>
+      <a class="drawer__cta" href="./kontakt.html" data-close>Anfrage</a>
+    </nav>
+    <div class="drawer__meta">verständlich · verbindlich · rechtssicher</div>
+  </aside>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </a>
+
+      <nav class="nav">
+        <a href="./ueber-mich.html" aria-current="page">Über mich</a>
+        <a href="./seminar.html">Seminar</a>
+        <a class="nav__cta" href="./kontakt.html">Anfrage</a>
+      </nav>
+
+      <button class="hamburger" data-open aria-label="Menü öffnen"><span></span></button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="kicker reveal">Über mich</p>
+      <h1 class="reveal">Erfahrung, die im Alltag wirkt.</h1>
+      <p class="lead reveal">Juristische Klarheit für den Arbeitsalltag — verständlich, verbindlich, rechtssicher.</p>
+
+      <div class="rule"></div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <h3>Erfahrung & Hintergrund</h3>
+          <div class="text">
+            <p>Studium der Rechtswissenschaften an der Eberhard Karls Universität Tübingen, Rechtsreferendariat am Landgericht Stuttgart.</p>
+            <p>Nach Abschluss des zweiten juristischen Staatsexamens war ich mehrere Jahre anwaltlich tätig und habe anschließend – auch mit Blick auf Familie und meine Söhne – meinen beruflichen Schwerpunkt bewusst verlagert.</p>
+            <p>Seit 2012 begleite ich immobilienbezogene Abläufe im laufenden Betrieb, insbesondere im Bereich von Ein- bis Mehrfamilienhäusern. Dazu gehören Abstimmung und Koordination von Renovierungs- und Instandhaltungsmaßnahmen sowie die strukturierte Begleitung von Entscheidungs- und Kommunikationsprozessen.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Warum Sensibilisierung statt Belehrung</h3>
+          <div class="text">
+            <p>Die meisten Probleme entstehen nicht aus fehlendem Fachwissen, sondern aus alltäglicher Kommunikation – aus dem, was gesagt, gemeint oder nicht klar festgehalten wird.</p>
+            <p>Genau hier setze ich an. Ich vermittle juristisches Denken praxisnah und verständlich – mit dem Ziel, Risiken frühzeitig zu erkennen und im Arbeitsalltag besser zu steuern, um Problemen, Mehrkosten und Haftungsfragen vorzubeugen.</p>
+          </div>
+
+          <div class="rule"></div>
+
+          <p class="text">
+            Aus dieser langjährigen Praxis heraus habe ich das Kompaktseminar zur Sensibilisierung für Sprache, Verhalten und Risikobewusstsein entwickelt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Annette Hamburg · Juristin
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

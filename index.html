@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Annette Hamburg – Rechtssicher kommunizieren</title>
+  <meta name="description" content="Kompaktseminar: Sensibilisierung für Sprache, Verhalten und Risikobewusstsein – verständlich, verbindlich, rechtssicher.">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <div class="overlay" data-close></div>
+  <aside class="drawer" aria-label="Menü" aria-hidden="true">
+    <div class="drawer__header">
+      <div class="drawer__brand">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </div>
+      <button class="iconbtn" data-close aria-label="Menü schließen">✕</button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="./index.html" data-close aria-current="page">Start</a>
+      <a href="./ueber-mich.html" data-close>Über mich</a>
+      <a href="./seminar.html" data-close>Seminar</a>
+      <a class="drawer__cta" href="./kontakt.html" data-close>Anfrage</a>
+    </nav>
+    <div class="drawer__meta">verständlich · verbindlich · rechtssicher</div>
+  </aside>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation">
+        <a href="./ueber-mich.html">Über mich</a>
+        <a href="./seminar.html">Seminar</a>
+        <a class="nav__cta" href="./kontakt.html">Anfrage</a>
+      </nav>
+
+      <button class="hamburger" data-open aria-label="Menü öffnen"><span></span></button>
+    </div>
+  </header>
+
+  <!-- Full-bleed Logo Intro -->
+  <section class="intro">
+    <div class="intro__inner reveal">
+      <img src="./assets/logo.png" alt="Annette Hamburg Logo">
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="wrap">
+      <p class="kicker reveal">Kompaktseminar für den Arbeitsalltag</p>
+      <h1 class="reveal">Kommunikation, die verbindlich wird.</h1>
+      <p class="lead reveal">
+        Juristische Klarheit für Sprache, Verhalten und Risikobewusstsein — praxisnah, verständlich und ohne Juristendeutsch.
+      </p>
+
+      <div class="actions reveal">
+        <a class="btn primary" href="./kontakt.html">Anfrage senden</a>
+        <a class="btn ghost" href="./seminar.html">Mehr erfahren</a>
+      </div>
+
+      <div class="metrics reveal" aria-label="Kurzfakten">
+        <div class="metric"><strong>~ 90 Minuten</strong><span>Dauer</span></div>
+        <div class="metric"><strong>Vor Ort</strong><span>im Betrieb oder extern</span></div>
+        <div class="metric"><strong>Teams</strong><span>Mitarbeitende & Führungskräfte</span></div>
+      </div>
+
+      <div class="rule"></div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <p class="kicker">Wirkung</p>
+          <h3>Weniger Reibung. Mehr Klarheit.</h3>
+          <p class="text">
+            Viele Probleme entstehen nicht aus fehlendem Fachwissen, sondern aus Kommunikation:
+            unklare Absprachen, unpräzise Formulierungen, fehlende Dokumentation.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <p class="kicker">Fokus</p>
+          <div class="bullets">
+            <div class="bullet"><strong>Klare Absprachen</strong><span>Formulierungen, die Missverständnisse vermeiden.</span></div>
+            <div class="bullet"><strong>Saubere Dokumentation</strong><span>Was muss festgehalten werden — und wie?</span></div>
+            <div class="bullet"><strong>Frühe Risikosteuerung</strong><span>Konflikte, Mehrkosten, Haftung reduzieren.</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Annette Hamburg · Juristin
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Seminar – Annette Hamburg</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <div class="overlay" data-close></div>
+  <aside class="drawer" aria-label="Menü" aria-hidden="true">
+    <div class="drawer__header">
+      <div class="drawer__brand">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </div>
+      <button class="iconbtn" data-close aria-label="Menü schließen">✕</button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="./index.html" data-close>Start</a>
+      <a href="./ueber-mich.html" data-close>Über mich</a>
+      <a href="./seminar.html" data-close aria-current="page">Seminar</a>
+      <a class="drawer__cta" href="./kontakt.html" data-close>Anfrage</a>
+    </nav>
+    <div class="drawer__meta">verständlich · verbindlich · rechtssicher</div>
+  </aside>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </a>
+
+      <nav class="nav">
+        <a href="./ueber-mich.html">Über mich</a>
+        <a href="./seminar.html" aria-current="page">Seminar</a>
+        <a class="nav__cta" href="./kontakt.html">Anfrage</a>
+      </nav>
+
+      <button class="hamburger" data-open aria-label="Menü öffnen"><span></span></button>
+    </div>
+  </header>
+
+  <section class="section alt">
+    <div class="wrap">
+      <p class="kicker reveal">Das Kompaktseminar</p>
+      <h1 class="reveal">Praxisnah. Klar. Umsetzbar.</h1>
+      <p class="lead reveal">Ohne Paragrafen-Show — dafür mit Formulierungen, Standards und Transfer in den Alltag.</p>
+
+      <div class="rule"></div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <p class="kicker">Auf einen Blick</p>
+          <div class="bullets">
+            <div class="bullet"><strong>Dauer</strong><span>ca. 90 Minuten</span></div>
+            <div class="bullet"><strong>Ort</strong><span>im Betrieb oder extern</span></div>
+            <div class="bullet"><strong>Zielgruppe</strong><span>Mitarbeitende & Führungskräfte</span></div>
+            <div class="bullet"><strong>Inhalt</strong><span>Sprache · Verhalten · Risiken</span></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <p class="kicker">Ergebnis</p>
+          <h3>Weniger Missverständnisse, weniger Risiko.</h3>
+          <p class="text">Mehr Klarheit in Kommunikation und Dokumentation — mit weniger Reibung und besserer Steuerbarkeit von Risiken.</p>
+          <div class="actions">
+            <a class="btn primary" href="./kontakt.html">Termin anfragen</a>
+            <a class="btn ghost" href="./ueber-mich.html">Über mich</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+
+      <p class="kicker reveal">Ablauf</p>
+      <ol class="steps" aria-label="Ablauf">
+        <li class="step reveal"><div class="step__n">01</div><div class="step__c"><h3>Stolperfallen im Alltag</h3><p>Wo Kommunikation kippt – und warum daraus Risiken entstehen.</p></div></li>
+        <li class="step reveal"><div class="step__n">02</div><div class="step__c"><h3>Sprache & Wirkung</h3><p>Was Zusagen auslösen – und wie man klar und sicher formuliert.</p></div></li>
+        <li class="step reveal"><div class="step__n">03</div><div class="step__c"><h3>Absprachen & Dokumentation</h3><p>Ein Rahmen, der im Alltag funktioniert – ohne Aufwand.</p></div></li>
+        <li class="step reveal"><div class="step__n">04</div><div class="step__c"><h3>Praxisfälle & Transfer</h3><p>Do’s & Don’ts, die sofort nutzbar sind.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Annette Hamburg · Juristin
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

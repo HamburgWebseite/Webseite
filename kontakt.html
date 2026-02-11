@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anfrage – Annette Hamburg</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <div class="overlay" data-close></div>
+  <aside class="drawer" aria-label="Menü" aria-hidden="true">
+    <div class="drawer__header">
+      <div class="drawer__brand">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </div>
+      <button class="iconbtn" data-close aria-label="Menü schließen">✕</button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="./index.html" data-close>Start</a>
+      <a href="./ueber-mich.html" data-close>Über mich</a>
+      <a href="./seminar.html" data-close>Seminar</a>
+      <a class="drawer__cta" href="./kontakt.html" data-close aria-current="page">Anfrage</a>
+    </nav>
+    <div class="drawer__meta">verständlich · verbindlich · rechtssicher</div>
+  </aside>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./index.html">
+        <strong>Annette Hamburg</strong>
+        <span>Rechtssicher kommunizieren</span>
+      </a>
+
+      <nav class="nav">
+        <a href="./ueber-mich.html">Über mich</a>
+        <a href="./seminar.html">Seminar</a>
+        <a class="nav__cta" href="./kontakt.html" aria-current="page">Anfrage</a>
+      </nav>
+
+      <button class="hamburger" data-open aria-label="Menü öffnen"><span></span></button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="kicker reveal">Anfrage</p>
+      <h1 class="reveal">Kontakt.</h1>
+      <p class="lead reveal">Schick kurz die Eckdaten — ich melde mich zeitnah zurück.</p>
+
+      <div class="rule"></div>
+
+      <div class="contactgrid">
+        <form class="form reveal" id="contactForm"
+              action="https://formspree.io/f/DEIN_FORM_ID"
+              method="POST">
+          <div class="row2">
+            <label>
+              Name
+              <input name="name" required placeholder="Vor- und Nachname">
+            </label>
+            <label>
+              E-Mail
+              <input type="email" name="email" required placeholder="name@firma.de">
+            </label>
+          </div>
+
+          <label>
+            Unternehmen (optional)
+            <input name="company" placeholder="Firma / Organisation">
+          </label>
+
+          <label>
+            Ort / Wunschtermin (optional)
+            <input name="whenwhere" placeholder="z.B. KW 40 · Stuttgart">
+          </label>
+
+          <label>
+            Nachricht
+            <textarea name="message" placeholder="Teilnehmerzahl, Branche, Ziele…"></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Anfrage senden</button>
+          <p class="small muted">Für echten Versand: Formspree-ID eintragen (bis dahin wird nichts gesendet).</p>
+        </form>
+
+        <aside class="contactbox reveal">
+          <div class="contactbox__row"><strong>E-Mail</strong><span>name@domain.de</span></div>
+          <div class="contactbox__row"><strong>Telefon</strong><span>+49 …</span></div>
+          <div class="contactbox__row"><strong>Ort</strong><span>…</span></div>
+          <div class="rule"></div>
+          <a class="btn ghost" href="./index.html">Zur Startseite</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Annette Hamburg · Juristin
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
